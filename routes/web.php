@@ -11,7 +11,7 @@ Route::namespace('Site')->group(function () {
     Route::get('/', [HomeController::class, 'index']);
 
     Route::get('/products', [CategoryController::class, 'index']);
-    Route::get('/products/{slug}', [CategoryController::class, 'show']);
+    Route::get('/products/{category}', [CategoryController::class, 'show']);
 
 
     Route::get('/blog', [BlogController::class, 'index']);
